@@ -8,6 +8,7 @@ A tiny weather widget for Zeit Online
 - you can change the location when you click on it :)
 - sets widget to dark or light mode
 - responive for desktop, mobile and tablet devices
+- Widget is readable be screenreaders
 
 Tasks included:
 
