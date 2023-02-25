@@ -1,0 +1,104 @@
+/*------------------*
+# Base
+*------------------*/
+
+html {
+    box-sizing: border-box;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: 1.5;
+    overflow-y: scroll;
+    min-height: 100%;
+    word-wrap: break-word;
+  }
+  
+  * {
+  
+    &,
+    &:before,
+    &:after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+  }
+  
+  body {
+    align-items: stretch;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    background-color: $color-grey;
+    color: $color-black;
+  
+    &.lock-scroll {
+      height: 100vh;
+      overflow-y: hidden;
+    }
+  }
+  
+  body.dark-theme {
+    background-color: $color-black;
+    color: $color-white;
+  }
+  
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    color: $color-black;
+    text-decoration: none;
+    font-weight: $standart-weight;
+  }
+  
+  input,
+  textarea {
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+  }
+  
+  .form-control {
+    border: none;
+    background-color: transparent;
+    color: $color-black;
+  }
+  
+  body.dark-theme .form-control {
+    color: $color-white;
+  }
+  
+  .form-control:focus {
+    color: $color-black;
+    border: none;
+    outline: none;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  body.dark-theme .form-control:focus {
+    color: $color-white;
+  }
+  
+  .form-control::placeholder {
+    color: $color-black;
+  }
+  
+  body.dark-theme .form-control::placeholder {
+    color: $color-white;
+  }
+  
+  .container {
+    $p: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px $p;
+  }

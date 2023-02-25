@@ -1,0 +1,25 @@
+<header class="header">
+    <div class="header__container container">
+      <div class="header__topside">
+        <div class="header__left"></div>
+        <!-- ZON logo dark/light versions -->
+        <div class="logo__container">
+          <div class="logo"></div>
+        </div>
+        <!-- weather -->
+        {% include "weather.html"%}
+        <!-- header burger button -->
+        <div class="header__burger_wrapper">
+          <button class="header__burger_open">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Burger menu list wrapper -->
+    <div class="header__burger-menu burger__menu">
+      <button class="header__burger_close">&#10005;</button>
+    </div>
+  </header>

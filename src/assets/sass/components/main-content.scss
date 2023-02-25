@@ -1,0 +1,27 @@
+/*------------------*
+# Main Content
+*------------------*/
+
+.main-content {
+    min-height: 100vh;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    background-color: $color-white;
+  }
+  
+  body.dark-theme .main-content {
+    background-color: $color-darkgrey;
+  }
+  
+  .wide-title {
+    position: relative;
+    font-size: 22px;
+    font-weight: $bold-weight;
+    color: $color-grey;
+    letter-spacing: 5px;
+    padding: 50px 0px;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+  
