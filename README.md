@@ -4,6 +4,11 @@ A tiny weather widget for Zeit Online
 
 ![logo](http://bannermann6.com/projects/zon/weather-widget/zon_widget.png)
 
+- shows local weather if geo location is enabled otherwise default location Hamburg is set
+- you can change the location when you click on it :)
+- sets widget to dark or light mode
+- responive for desktop, mobile and tablet devices
+
 Tasks included:
 
 - HTML minify (on build)

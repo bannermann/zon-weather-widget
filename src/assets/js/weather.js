@@ -37,6 +37,16 @@ function weather() {
         getWeatherData('Hamburg');
     }
 
+    navigator.geolocation.watchPosition(function (position) {
+        console.log("get browser location weather data")
+        navigator.geolocation.getCurrentPosition(success);
+    },
+        function (error) {
+            if (error.code == error.PERMISSION_DENIED)
+                console.log("get default weather data")
+            getWeatherData('Hamburg');
+        });
+
     // function to get lat/long and plot on a google map
     function success(position) {
         var latitude = position.coords.latitude;						// set latitude variable
